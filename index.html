@@ -8,15 +8,16 @@
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
       background-color: #f8f5f2;
-      color: #333;
+      color: #222;
     }
     header {
       text-align: center;
-      background-color: #6f4e37;
+      background-color: #1c1c1c;
       padding: 20px 0;
     }
     header img {
       max-height: 80px;
+	  filter: grayscale(100%) brightness(0.9);
     }
     h1 {
       color: #fff;
@@ -26,7 +27,7 @@
     .promo {
       text-align: center;
       padding: 30px 20px;
-      background-color: #e5dcc9;
+      background-color: #e0e0e0; 
       font-size: 20px;
       font-style: italic;
     }
@@ -38,12 +39,17 @@
       gap: 30px;
     }
     .product {
-      background-color: #fff;
+      background-color: #ffffff;
       border-radius: 8px;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
       width: 250px;
       text-align: center;
       padding: 20px;
+	  transition: transform 0.2s, box-shadow 0.2s;
+    }
+   .product:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.15);
     }
     .product img {
       max-width: 100%;
